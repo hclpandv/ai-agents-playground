@@ -10,9 +10,7 @@ Before running this project, you need to configure environment variables.
 
 ## 2. Create Environment File
 
-Create a file at: news-agent/.env  
-
-Then add the following content:
+Create a file at: `news-agent/.env` and add the following content:
 
 ```bash
 # Create file news-agent/.env:
