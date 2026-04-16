@@ -7,7 +7,6 @@ Agentic AI demos using LLMs, news APIs, and automation tools.
 
 Before running this project, you need to configure environment variables.
 
----
 
 ## 2. Create Environment File
 
