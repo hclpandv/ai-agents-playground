@@ -2,6 +2,17 @@ from modules.news import fetch_news
 from modules.llm import summarize
 from modules.email_sender import send_email
 
+"""
+This is a manual orchestrator, not a true agentic AI system.
+
+It mimics an agent by following a fixed pipeline:
+fetch → filter → summarize → email
+
+But it is hardcoded, linear, no state tracking, no branching logic engine
+
+`agent.py` implements the same logic using an agent framework (LangGraph),
+with explicit state, nodes, and flexible execution flow.
+"""
 
 def is_important(article):
     text = (article.get("title") or "") + " " + (article.get("description") or "")
@@ -50,7 +61,7 @@ def run_agent():
 
 
 # -----------------------------
-# 4. Entry point
+# Entry point
 # -----------------------------
 if __name__ == "__main__":
     run_agent()
