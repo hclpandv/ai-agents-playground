@@ -8,7 +8,9 @@ cd "$(dirname "$0")"
 
 log "Loading environment variables"
 set -a
-source news-agent/.env
+if [ -f news-agent/.env ]; then
+  source news-agent/.env
+fi
 set +a
 
 log "Running AI News Agent"

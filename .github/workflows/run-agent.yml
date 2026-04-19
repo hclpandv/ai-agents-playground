@@ -5,6 +5,13 @@ on:
     - cron: "0 * * * *"   # every hour
   workflow_dispatch:       # allows manual trigger
 
+env:
+  EMAIL_SENDER: "vikiscripts@gmail.com"
+  EMAIL_RECEIVER: "vikas110@gmail.com"
+  EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+  NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  
 jobs:
   run-agent:
     runs-on: ubuntu-latest
