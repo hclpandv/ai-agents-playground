@@ -1,0 +1,20 @@
+name: Run Agent Every Hour
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:       # allows manual trigger
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup ansible env for agent
+        run: bash setup-env.sh
+
+      - name: Run agent
+        run: bash run-agent.sh
