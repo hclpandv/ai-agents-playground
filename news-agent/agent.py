@@ -2,8 +2,8 @@ from typing import TypedDict
 from langgraph.graph import StateGraph, END
 
 from modules.news import fetch_news
-from modules.llm import summarize
 from modules.email_sender import send_email
+from modules import summarize
 
 
 # -----------------------------

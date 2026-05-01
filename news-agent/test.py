@@ -1,5 +1,6 @@
 from modules.email_sender import send_email
 from modules.llm import summarize, test_gemini
+from modules.llm_local import query_local_llm
 from modules.news import test_news, fetch_news
 
 

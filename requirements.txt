@@ -1,7 +1,10 @@
+jupyter
+ipykernel
+pandas
+numpy
+matplotlib
 langgraph
 langchain
 langchain-community
-langchain-ollama
-requests
 python-dotenv
 google-genai
