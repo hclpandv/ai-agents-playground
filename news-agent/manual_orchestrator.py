@@ -1,5 +1,5 @@
+from modules import summarize
 from modules.news import fetch_news
-from modules.llm import summarize
 from modules.email_sender import send_email
 
 """

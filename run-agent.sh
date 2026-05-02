@@ -17,5 +17,4 @@ log "Running AI News Agent"
 #.ai-env/bin/python news-agent/manual_orchestrator.py
 .ai-env/bin/python news-agent/agent.py
 
-
 log "Done"
