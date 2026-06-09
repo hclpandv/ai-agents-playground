@@ -14,7 +14,7 @@ def test_gemini():
 
 def summarize(text: str):
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-flash-lite",
         contents=f"""
 You are a news assistant.
 
